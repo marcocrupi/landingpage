@@ -1,0 +1,81 @@
+body,html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* il seguente codice è preso da https://css-tricks.com/perfect-full-page-background-image/ 
+  serve a centrare perfettamente lo sfondo e a fare in modo che sia responsivo*/
+}
+
+h1 {
+  font-size: 3em;
+  color: #e6e6e6;  
+  /* position: fixed;
+  margin-bottom: 18rem; */
+  margin-bottom: 8rem;
+}
+
+.container1 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+}
+.container2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 15vh;
+  align-items: center;
+}
+.container3 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 35vh;
+  align-items: center;
+}
+
+/* .buffer {
+  height: 10rem;
+} */
+
+.line {
+  background-color: rgb(218, 76, 11);
+  width: 4rem;  
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  /* La proprietà "border-radius" serve per fare i bordi arrotondati,
+  tutti i dettagli qui:  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: rgb(218, 76, 11);
+  border-color: rgb(218, 76, 11);
+}
+
+.btn-primary:hover {
+  background-color: rgb(221, 63, 0);
+  border-color: rgb(221, 63, 0);
+  /* width: 13rem;  
+  height: 5rem; */
+  border-width: 5px;
+}
+
+.btn-xl {
+  /* width: 12rem;  
+  height: 4rem; */
+  padding: 1rem 2rem;
+}
